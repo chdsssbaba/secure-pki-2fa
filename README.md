@@ -87,7 +87,7 @@ curl -X POST http://localhost:8080/verify-2fa -H "Content-Type: application/json
 Wait 60 seconds, then check if the cron job is logging to the volume.
 
 ```bash
-docker exec pki-2fa-gpp-app-1 cat /cron/last_code.txt  
+docker exec secure-pki-2fa-app-1 cat /cron/last_code.txt  
 ```
 
 *Expected Output:* A list of logs with UTC timestamps:
